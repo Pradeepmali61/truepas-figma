@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>TruePass — Family Tab</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-header">
+    <a class="back-link" href="index.html">← Back to all categories</a>
+    <h1><img src="images/familyicon2.png" alt="Family" style="width:1em; height:1em; object-fit:contain; vertical-align:middle;"> Family Tab</h1>
+    <p>Replaces Transactions tab — family member management with age-based rules + age-18 transition notification</p>
+  </div>
+
+  <div class="gallery">
+
+    <!-- FAMILY LIST: EMPTY -->
+    <div class="screen-block">
+      <div class="phone"><div class="phone-screen">
+        <div class="notch"></div>
+        <div class="status-row"><span>9:41</span><span>🔋 100%</span></div>
+        <div class="screen-body" style="background:#ffffff;">
+          <div class="app-header">
+            <div class="title" style="font-size:20px; font-weight:700;">Family</div>
+            <div class="icon-btn" style="background:#e8f0fe; border:none;">➕</div>
+          </div>
+          <div class="empty-state">
+            <div class="icon"><img src="images/familyicon2.png" alt="Family" style="width:1em; height:1em; object-fit:contain; vertical-align:middle;"></div>
+            <div class="title">No family members yet</div>
+            <div class="desc">Add your dependents to manage their identity verification too.</div>
+            <div class="btn-primary" style="width:220px;">＋ Add Family Member</div>
+          </div>
+        </div>
+        <div class="bottom-nav">
+          <div class="item"><span class="icon"><img src="images/idcardicon.png" alt="Identity" style="width:22px; height:22px; object-fit:contain; display:block; margin:0 auto;"></span>Identity</div>
+          <div class="item"><span class="icon"><img src="images/documentsicon.png" alt="Documents" onerror="this.parentNode.textContent='🪪';" style="width:22px; height:22px; object-fit:contain; display:block; margin:0 auto;"></span>Documents</div>
+          <div class="item active"><span class="icon"><img src="images/familyicon2.png" alt="Family" style="width:1em; height:1em; object-fit:contain; vertical-align:middle;"></span>Family</div>
+          <div class="item"><span class="icon"><img src="images/historyicon.png" alt="History" onerror="this.parentNode.textContent='🕓';" style="width:22px; height:22px; object-fit:contain; display:block; margin:0 auto;"></span>History</div>
+        </div>
+      </div></div>
+      <div class="screen-label">Family — Empty State <span class="tag-new">NEW</span></div>
+      <div class="screen-sub">Replaces (tabs)/history.tsx</div>
+    </div>
+
+    <!-- ADD FAMILY: STEP 1 BASIC INFO -->
+    <div class="screen-block">
+      <div class="phone"><div class="phone-screen">
+        <div class="notch"></div>
+        <div class="status-row"><span>9:41</span><span>🔋 100%</span></div>
+        <div class="app-topbar">
+          <div style="width:36px; height:36px; display:flex; align-items:center; justify-content:center;"><img src="images/backarrow.png" alt="Back" onerror="this.parentNode.textContent='‹';" style="width:20px; height:20px; object-fit:contain; display:block;"></div>
+          <div class="title">Add Family Member</div>
+          <div style="width:36px;"></div>
+        </div>
+        <div class="stepper">
+          <div class="seg done"></div><div class="seg"></div><div class="seg"></div><div class="seg"></div>
+        </div>
+        <div class="screen-body" style="padding:0 24px;">
+          <div style="padding:6px 0 12px;"><h2 style="margin:0; font-size:16px; font-weight:700; color:#2727d6;">Basic Information</h2></div>
+          <div class="floating-input">
+            <span class="label">Full Name</span>
+            <span class="placeholder">Max Kim</span>
+          </div>
+          <div class="floating-input">
+            <span class="label">Date of Birth</span>
+            <span class="placeholder"><img src="images/calendaricon.png" alt="Calendar" onerror="this.style.display='none';" style="width:14px; height:14px; object-fit:contain; vertical-align:middle; display:inline-block; margin-right:6px;">MM / DD / YYYY</span>
+          </div>
+          <div style="font-size:12px; color:#666666; margin:0 24px 8px; font-weight:600;">Relationship</div>
+          <div class="chip-row">
+            <div class="chip selected">Son</div>
+            <div class="chip">Daughter</div>
+            <div class="chip">Spouse</div>
+            <div class="chip">Parent</div>
+            <div class="chip">Sibling</div>
+          </div>
+          <div class="checkbox-row">
+            <div class="checkbox-box checked">✓</div>
+            <div class="txt">I confirm I am the parent/legal guardian and consent to identity verification on behalf of this minor.</div>
+          </div>
+          <div style="flex:1;"></div>
+          <div style="padding:16px 0 24px;"><div class="btn-primary">Continue</div></div>
+        </div>
+      </div></div>
+      <div class="screen-label">Add Family — Step 1: Basic Info <span class="tag-new">NEW</span></div>
+      <div class="screen-sub">PRD: guardianship consent for minors</div>
+    </div>
+
+    <!-- ADD FAMILY: AGE 18+ REJECTED -->
+    <div class="screen-block">
+      <div class="phone"><div class="phone-screen">
+        <div class="notch"></div>
+        <div class="status-row"><span>9:41</span><span>🔋 100%</span></div>
+        <div class="center-col">
+          <div class="shield-icon" style="background:#fef2f2;">🚫</div>
+          <h2 style="font-size:18px; font-weight:700; margin:0 0 6px; color:#2727d6;">Adults Need Their Own Account</h2>
+          <p style="font-size:14px; color:#666666; margin:0 0 16px; max-width:270px;">Robert Kim is 68 years old. Family onboarding is only for dependents under 18. Please ask them to register independently.</p>
+        </div>
+        <div style="padding:0 24px 24px;">
+          <div class="btn-outline">Go Back</div>
+        </div>
+      </div></div>
+      <div class="screen-label">Add Family — Age 18+ Rejected <span class="tag-new">NEW</span></div>
+      <div class="screen-sub">PRD: adults must create own account</div>
+    </div>
+
+    <!-- ADD FAMILY: STEP 2 DOCUMENT (age 5-17) -->
+    <div class="screen-block">
+      <div class="phone"><div class="phone-screen">
+        <div class="notch"></div>
+        <div class="status-row"><span>9:41</span><span>🔋 100%</span></div>
+        <div class="app-topbar">
+          <div style="width:36px; height:36px; display:flex; align-items:center; justify-content:center;"><img src="images/backarrow.png" alt="Back" onerror="this.parentNode.textContent='‹';" style="width:20px; height:20px; object-fit:contain; display:block;"></div>
+          <div class="title">Add Family Member</div>
+          <div style="width:36px;"></div>
+        </div>
+        <div class="stepper">
+          <div class="seg done"></div><div class="seg done"></div><div class="seg"></div><div class="seg"></div>
+        </div>
+        <div class="screen-body" style="padding:0 24px;">
+          <div style="text-align:center; padding:16px 0 8px;">
+            <span class="pill active">Age 5-17 · Doc + Selfie + Face Required</span>
+          </div>
+          <div class="floating-input" style="margin-top:12px;">
+            <span class="label">Document Type</span>
+            <span class="value">🪪 Identity Card</span>
+          </div>
+          <div class="doc-frame" style="width:240px; height:150px;"><img src="images/idcardicon.png" alt="ID Card" onerror="this.parentNode.textContent='🪪';" style="width:80px; height:80px; object-fit:contain; display:block; margin:0 auto;"></div>
+          <div style="text-align:center; font-size:12px; color:#666666; margin-top:-10px;">Scan Max's Identity Card</div>
+          <div style="flex:1;"></div>
+          <div style="padding:16px 0 24px;"><div class="btn-primary">Scan Document</div></div>
+        </div>
+      </div></div>
+      <div class="screen-label">Add Family — Step 2: Document (5-17) <span class="tag-new">NEW</span></div>
+      <div class="screen-sub">PRD: 5-17 requires doc + selfie + face enrollment</div>
+    </div>
+
+    <!-- ADD FAMILY: STEP 3 SELFIE + FACE ENROLLMENT (5-17) -->
+    <div class="screen-block">
+      <div class="phone"><div class="phone-screen">
+        <div class="notch"></div>
+        <div class="status-row" style="color:#4e9af1;"><span>9:41</span><span>🔋 100%</span></div>
+        <div style="flex:1; background:#111111; display:flex; flex-direction:column; align-items:center; justify-content:center; position:relative;">
+          <div style="color:#4e9af1; font-size:14px; font-weight:600; margin-bottom:12px;">Capture Max's Face</div>
+          <div style="width:220px; height:220px; border-radius:50%; border:4px solid #2727d6; display:flex; align-items:center; justify-content:center; font-size:70px;">🙂</div>
+          <div style="color:#2727d6; font-size:13px; margin-top:14px;"><img src="images/checkicon.png" alt="✓" style="width:12px; height:12px; object-fit:contain; vertical-align:middle; display:inline-block; margin-right:6px;"> Face Detected</div>
+          <div style="color:#666666; font-size:12px; margin-top:8px; max-width:240px; text-align:center;">Enrolling face template in ROC for future verification</div>
+          <div style="position:absolute; bottom:30px; left:0; right:0; text-align:center;">
+            <div style="width:64px; height:64px; border-radius:50%; background:#ffffff; border:4px solid #2727d6; margin:0 auto;"></div>
+          </div>
+        </div>
+      </div></div>
+      <div class="screen-label">Add Family — Selfie/Face Enrollment (5-17) <span class="tag-new">NEW</span></div>
+      <div class="screen-sub">PRD: face enrollment required for ages 5-17</div>
+    </div>
+
+    <!-- ADD FAMILY: AGE 0-4 (DOC ONLY) -->
+    <div class="screen-block">
+      <div class="phone"><div class="phone-screen">
+        <div class="notch"></div>
+        <div class="status-row"><span>9:41</span><span>🔋 100%</span></div>
+        <div class="app-topbar">
+          <div style="width:36px; height:36px; display:flex; align-items:center; justify-content:center;"><img src="images/backarrow.png" alt="Back" onerror="this.parentNode.textContent='‹';" style="width:20px; height:20px; object-fit:contain; display:block;"></div>
+          <div class="title">Add Family Member</div>
+          <div style="width:36px;"></div>
+        </div>
+        <div class="stepper">
+          <div class="seg done"></div><div class="seg done"></div><div class="seg done"></div><div class="seg"></div>
+        </div>
+        <div class="screen-body" style="padding:0 24px;">
+          <div style="text-align:center; padding:16px 0 8px;">
+            <span class="pill gray">Age 0-4 · Document Only</span>
+          </div>
+          <div class="info-banner">
+            <span><img src="images/infoicon.png" alt="ℹ️" onerror="this.parentNode.textContent='ℹ️';" style="width:16px; height:16px; object-fit:contain; display:block;"></span><span>Children under 5 only need a document uploaded — no face scan required.</span>
+          </div>
+          <div class="floating-input" style="margin-top:12px;">
+            <span class="label">Document Type</span>
+            <span class="value">🪪 Identity Card / Birth Certificate</span>
+          </div>
+          <div class="doc-frame" style="width:240px; height:150px;"><img src="images/idcardicon.png" alt="ID Card" onerror="this.parentNode.textContent='🪪';" style="width:80px; height:80px; object-fit:contain; display:block; margin:0 auto;"></div>
+          <div style="flex:1;"></div>
+          <div style="padding:16px 0 24px;"><div class="btn-primary">Upload Document</div></div>
+        </div>
+      </div></div>
+      <div class="screen-label">Add Family — Age 0-4 (Doc Only) <span class="tag-new">NEW</span></div>
+      <div class="screen-sub">PRD: 0-4 only document, no face enrollment</div>
+    </div>
+
+    <!-- FAMILY LIST: WITH MEMBERS + AGE-18 NOTIFICATION -->
+    <div class="screen-block">
+      <div class="phone"><div class="phone-screen">
+        <div class="notch"></div>
+        <div class="status-row"><span>9:41</span><span>🔋 100%</span></div>
+        <div class="screen-body" style="background:#ffffff;">
+          <div class="app-header">
+            <div class="title" style="font-size:20px; font-weight:700;">Family</div>
+            <div class="icon-btn" style="background:#e8f0fe; border:none;">➕</div>
+          </div>
+
+          <!-- Age-18 transition notification -->
+          <div class="notification-card">
+            <div class="icon"><img src="images/cakeicon.png" alt="Cake" onerror="this.parentNode.textContent='🎂';" style="width:1em; height:1em; object-fit:contain; display:block; margin:0 auto;"></div>
+            <div>
+              <div class="title">Max Kim is turning 18 soon</div>
+              <div class="desc">They'll need their own TruePass account. Remove them from family or remind later.</div>
+              <div style="display:flex; gap:8px; margin-top:10px;">
+                <div style="background:#2727d6; color:#ffffff; border-radius:20px; padding:6px 14px; font-size:12px; font-weight:600;">Remove from Family</div>
+                <div style="background:#ffffff; color:#666666; border:1px solid #cccccc; border-radius:20px; padding:6px 14px; font-size:12px; font-weight:600;">Remind Later</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="family-card">
+            <div class="avatar" style="width:44px; height:44px; font-size:16px;">MK</div>
+            <div class="info">
+              <div class="name">Max Kim</div>
+              <div class="meta">Son · Age 17 · Face + Doc Verified</div>
+            </div>
+            <span class="pill warn" style="margin-left:auto;">Turning 18</span>
+          </div>
+          <div class="family-card">
+            <div class="avatar" style="width:44px; height:44px; font-size:16px;">LK</div>
+            <div class="info">
+              <div class="name">Lily Kim</div>
+              <div class="meta">Daughter · Age 2 · Document Only</div>
+            </div>
+            <span class="pill" style="margin-left:auto;">Active</span>
+          </div>
+          <div class="family-card">
+            <div class="avatar" style="width:44px; height:44px; font-size:16px;">RK</div>
+            <div class="info">
+              <div class="name">Robert Kim</div>
+              <div class="meta">Father · Age 68 · Pending Verification</div>
+            </div>
+            <span class="pill warn" style="margin-left:auto;"><img src="images/hourglassicon.png" alt="⏳" onerror="this.style.display='none';" style="width:10px; height:10px; object-fit:contain; vertical-align:middle; display:inline-block; margin-right:4px;">Pending</span>
+          </div>
+          <div style="padding:16px 20px;"><div class="btn-secondary">＋ Add Family Member</div></div>
+        </div>
+        <div class="bottom-nav">
+          <div class="item"><span class="icon"><img src="images/idcardicon.png" alt="Identity" style="width:22px; height:22px; object-fit:contain; display:block; margin:0 auto;"></span>Identity</div>
+          <div class="item"><span class="icon"><img src="images/documentsicon.png" alt="Documents" onerror="this.parentNode.textContent='🪪';" style="width:22px; height:22px; object-fit:contain; display:block; margin:0 auto;"></span>Documents</div>
+          <div class="item active"><span class="icon"><img src="images/familyicon2.png" alt="Family" style="width:1em; height:1em; object-fit:contain; vertical-align:middle;"></span>Family</div>
+          <div class="item"><span class="icon"><img src="images/historyicon.png" alt="History" onerror="this.parentNode.textContent='🕓';" style="width:22px; height:22px; object-fit:contain; display:block; margin:0 auto;"></span>History</div>
+        </div>
+      </div></div>
+      <div class="screen-label">Family — List + Age-18 Notification <span class="tag-new">NEW</span></div>
+      <div class="screen-sub">PRD: age-18 transition alert with remove/remind actions</div>
+    </div>
+
+    <!-- FAMILY MEMBER DETAIL -->
+    <div class="screen-block">
+      <div class="phone"><div class="phone-screen">
+        <div class="notch"></div>
+        <div class="status-row"><span>9:41</span><span>🔋 100%</span></div>
+        <div class="app-topbar">
+          <div style="width:36px; height:36px; display:flex; align-items:center; justify-content:center;"><img src="images/backarrow.png" alt="Back" onerror="this.parentNode.textContent='‹';" style="width:20px; height:20px; object-fit:contain; display:block;"></div>
+          <div class="title">Max Kim</div>
+          <div style="width:36px;"></div>
+        </div>
+        <div class="screen-body" style="background:#ffffff;">
+          <div style="text-align:center; padding:20px 0;">
+            <div class="avatar" style="width:72px; height:72px; font-size:26px; margin:0 auto 10px;">MK</div>
+            <div style="font-size:16px; font-weight:700; color:#2727d6;">Max Kim</div>
+            <div style="font-size:13px; color:#666666;">Son · Age 9</div>
+            <span class="pill" style="margin-top:8px; display:inline-block;">Fully Verified</span>
+          </div>
+          <div class="card">
+            <div class="row-between" style="margin-bottom:8px;">
+              <span style="font-size:13px; color:#666666;">Face Enrolled</span>
+              <span style="font-size:13px; color:#2727d6; font-weight:700;"><img src="images/checkicon.png" alt="✓" style="width:12px; height:12px; object-fit:contain; vertical-align:middle; display:inline-block; margin-right:6px;"> Yes</span>
+            </div>
+            <div class="row-between">
+              <span style="font-size:13px; color:#666666;">Documents Verified</span>
+              <span style="font-size:13px; color:#2727d6; font-weight:700;">1</span>
+            </div>
+          </div>
+          <div class="section-title">Documents</div>
+          <div class="doc-card">
+            <div class="icon-wrap"><img src="images/idcardicon.png" alt="ID Card" onerror="this.parentNode.textContent='🪪';" style="width:28px; height:28px; object-fit:contain; display:block; margin:0 auto;"></div>
+            <div class="info"><div class="name">Identity Card</div><div class="meta">Verified · 04/2027</div></div>
+            <span class="pill" style="margin-left:auto;">Verified</span>
+          </div>
+          <div class="section-title">Recent Activity</div>
+          <div class="activity-item">
+            <div class="dot success"></div>
+            <div class="text"><div class="t1">Identity Card verified</div><div class="t2">Jul 20, 2026</div></div>
+          </div>
+          <div class="activity-item">
+            <div class="dot success"></div>
+            <div class="text"><div class="t1">Face enrolled</div><div class="t2">Jul 20, 2026</div></div>
+          </div>
+          <div class="activity-item">
+            <div class="dot"></div>
+            <div class="text"><div class="t1">Added to family</div><div class="t2">Jul 20, 2026</div></div>
+          </div>
+          <div style="flex:1;"></div>
+          <div style="padding:16px 20px 24px;">
+            <div class="btn-secondary">＋ Add Another Document</div>
+            <div class="btn-outline" style="margin-top:10px; color:#2727d6; border-color:#fecaca;">Remove Family Member</div>
+          </div>
+        </div>
+      </div></div>
+      <div class="screen-label">Family Member Detail <span class="tag-new">NEW</span></div>
+      <div class="screen-sub">family/[memberId].tsx — with activity log</div>
+    </div>
+
+
+
+  </div>
+</body>
+</html>

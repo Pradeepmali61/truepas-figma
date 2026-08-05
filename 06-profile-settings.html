@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>TruePass — Profile & Settings</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-header">
+    <a class="back-link" href="index.html">← Back to all categories</a>
+    <h1>⚙️ Profile & Settings</h1>
+    <p>Profile, Edit Profile, Change PIN, Security Settings, Update Face (PIN-protected with ROC retry), Update Face Success</p>
+  </div>
+
+  <div class="gallery">
+
+    <!-- PROFILE -->
+    <div class="screen-block">
+      <div class="phone"><div class="phone-screen">
+        <div class="notch"></div>
+        <div class="status-row"><span>9:41</span><span>🔋 100%</span></div>
+        <div class="screen-body" style="background:#ffffff;">
+          <div style="text-align:center; padding:24px 20px 12px;">
+            <div class="avatar" style="width:72px; height:72px; font-size:28px; margin:0 auto 10px;">JD</div>
+            <div style="font-size:18px; font-weight:700; color:#2727d6;">Jane Doe</div>
+            <div style="font-size:14px; color:#666666;">jane.doe@email.com</div>
+          </div>
+          <!-- Identity status summary -->
+          <div class="card">
+            <div style="font-size:12px; color:#666666; margin-bottom:8px;">Identity Status</div>
+            <div class="row-between" style="margin-bottom:6px;">
+              <span style="font-size:13px;"><img src="images/shieldicon.png" alt="🛡️" onerror="this.parentNode.textContent='🛡️';" style="width:24px; height:24px; object-fit:contain; display:block;"> Face Enrolled</span>
+              <span style="font-size:12px; color:#2727d6; font-weight:600;">✓</span>
+            </div>
+            <div class="row-between" style="margin-bottom:6px;">
+              <span style="font-size:13px;">🪪 Documents Verified</span>
+              <span style="font-size:12px; color:#2727d6; font-weight:600;">2</span>
+            </div>
+            <div class="row-between">
+              <span style="font-size:13px;"><img src="images/familyicon2.png" alt="Family" style="width:1em; height:1em; object-fit:contain; vertical-align:middle;"> Family Members</span>
+              <span style="font-size:12px; color:#2727d6; font-weight:600;">3</span>
+            </div>
+          </div>
+          <!-- Account section -->
+          <div class="section-title">Account</div>
+          <div class="list-item"><div class="icon-wrap">👤</div><div class="text"><div class="t1">Edit Profile</div></div><span class="chevron">›</span></div>
+          <div class="divider"></div>
+          <div class="list-item"><div class="icon-wrap">🪪</div><div class="text"><div class="t1">Documents</div></div><span class="chevron">›</span></div>
+          <div class="divider"></div>
+          <div class="list-item"><div class="icon-wrap"><img src="images/familyicon2.png" alt="Family" style="width:1em; height:1em; object-fit:contain; vertical-align:middle;"></div><div class="text"><div class="t1">Family Members</div></div><span class="chevron">›</span></div>
+          <div class="divider"></div>
+          <div class="list-item"><div class="icon-wrap">🔐</div><div class="text"><div class="t1">PIN & Security</div></div><span class="chevron">›</span></div>
+          <div class="divider"></div>
+          <div class="list-item"><div class="icon-wrap">🙂</div><div class="text"><div class="t1">Update Face</div></div><span class="chevron">›</span></div>
+          <!-- General section -->
+          <div class="section-title">General</div>
+          <div class="list-item"><div class="icon-wrap">📄</div><div class="text"><div class="t1">Data & Privacy</div></div><span class="chevron">›</span></div>
+          <div class="divider"></div>
+          <div class="list-item"><div class="icon-wrap">📋</div><div class="text"><div class="t1">Privacy Policy</div></div><span class="chevron">›</span></div>
+          <div class="divider"></div>
+          <div class="list-item"><div class="icon-wrap">📜</div><div class="text"><div class="t1">Terms of Service</div></div><span class="chevron">›</span></div>
+          <div class="divider"></div>
+          <div class="list-item"><div class="icon-wrap"><img src="images/infoicon.png" alt="ℹ️" onerror="this.parentNode.textContent='ℹ️';" style="width:16px; height:16px; object-fit:contain; display:block;"></div><div class="text"><div class="t1">About TruePass</div></div><span class="chevron">›</span></div>
+          <div class="divider"></div>
+          <div class="list-item"><div class="icon-wrap">🚪</div><div class="text"><div class="t1" style="color:#2727d6;">Log Out</div></div></div>
+          <div style="height:100px;"></div>
+        </div>
+        <div style="padding:12px 20px; border-top:1px solid #e8f0fe; background:#ffffff;">
+          <div style="text-align:center; font-size:14px; color:#2727d6; font-weight:500;">‹ Back to Identity</div>
+        </div>
+      </div></div>
+      <div class="screen-label">Profile <span class="tag-mod">MODIFIED</span></div>
+      <div class="screen-sub">Replaces (tabs)/profile.tsx — identity-focused</div>
+    </div>
+
+    <!-- EDIT PROFILE -->
+    <div class="screen-block">
+      <div class="phone"><div class="phone-screen">
+        <div class="notch"></div>
+        <div class="status-row"><span>9:41</span><span>🔋 100%</span></div>
+        <div class="app-topbar">
+          <div style="width:36px; height:36px; display:flex; align-items:center; justify-content:center;"><img src="images/backarrow.png" alt="Back" onerror="this.parentNode.textContent='‹';" style="width:20px; height:20px; object-fit:contain; display:block;"></div>
+          <div class="title">Edit Profile</div>
+          <div style="width:36px;"></div>
+        </div>
+        <div class="screen-body" style="background:#ffffff; padding:0 24px;">
+          <div style="text-align:center; padding:20px 0;">
+            <div class="avatar" style="width:80px; height:80px; font-size:30px; margin:0 auto; position:relative;">JD
+              <div style="position:absolute; bottom:-2px; right:-2px; width:28px; height:28px; background:#2727d6; border-radius:50%; border:2px solid #4e9af1; display:flex; align-items:center; justify-content:center; font-size:12px; color:#4e9af1;">📷</div>
+            </div>
+          </div>
+          <div class="floating-input" style="margin-top:16px;">
+            <span class="label">Full Name</span>
+            <span class="value">Jane Doe</span>
+          </div>
+          <div class="floating-input">
+            <span class="label">Email</span>
+            <span class="value">jane.doe@email.com</span>
+          </div>
+          <div class="floating-input">
+            <span class="label">Phone Number</span>
+            <span class="value">+1 (555) 123-4567</span>
+          </div>
+          <div class="floating-input">
+            <span class="label">Date of Birth</span>
+            <span class="value"><img src="images/calendaricon.png" alt="Calendar" onerror="this.style.display='none';" style="width:14px; height:14px; object-fit:contain; vertical-align:middle; display:inline-block; margin-right:6px;">04/12/1994</span>
+          </div>
+          <div style="flex:1;"></div>
+          <div style="padding:16px 0 24px;"><div class="btn-primary">Save Changes</div></div>
+        </div>
+      </div></div>
+      <div class="screen-label">Edit Profile</div>
+      <div class="screen-sub">edit-profile.tsx</div>
+    </div>
+
+    <!-- CHANGE PIN -->
+    <div class="screen-block">
+      <div class="phone"><div class="phone-screen">
+        <div class="notch"></div>
+        <div class="status-row"><span>9:41</span><span>🔋 100%</span></div>
+        <div class="app-topbar">
+          <div style="width:36px; height:36px; display:flex; align-items:center; justify-content:center;"><img src="images/backarrow.png" alt="Back" onerror="this.parentNode.textContent='‹';" style="width:20px; height:20px; object-fit:contain; display:block;"></div>
+          <div class="title">Change PIN</div>
+          <div style="width:36px;"></div>
+        </div>
+        <div class="center-col">
+          <div style="font-size:36px;">🔐</div>
+          <h2 style="font-size:18px; font-weight:700; margin:16px 0 4px; color:#2727d6;">Enter Current PIN</h2>
+          <p style="font-size:14px; color:#666666; margin:0 0 10px;">Verify it's you before changing PIN</p>
+          <div class="pin-dots">
+            <div class="pin-dot filled"></div>
+            <div class="pin-dot filled"></div>
+            <div class="pin-dot"></div>
+            <div class="pin-dot"></div>
+          </div>
+        </div>
+        <div class="pin-pad">
+          <div>1</div><div>2</div><div>3</div>
+          <div>4</div><div>5</div><div>6</div>
+          <div>7</div><div>8</div><div>9</div>
+          <div></div><div>0</div><div>⌫</div>
+        </div>
+      </div></div>
+      <div class="screen-label">Change PIN — Verify Current</div>
+      <div class="screen-sub">change-pin.tsx (step 1)</div>
+    </div>
+
+    <!-- CHANGE PIN: NEW PIN -->
+    <div class="screen-block">
+      <div class="phone"><div class="phone-screen">
+        <div class="notch"></div>
+        <div class="status-row"><span>9:41</span><span>🔋 100%</span></div>
+        <div class="app-topbar">
+          <div style="width:36px; height:36px; display:flex; align-items:center; justify-content:center;"><img src="images/backarrow.png" alt="Back" onerror="this.parentNode.textContent='‹';" style="width:20px; height:20px; object-fit:contain; display:block;"></div>
+          <div class="title">Change PIN</div>
+          <div style="width:36px;"></div>
+        </div>
+        <div class="center-col">
+          <div style="font-size:36px;">🔑</div>
+          <h2 style="font-size:18px; font-weight:700; margin:16px 0 4px; color:#2727d6;">Create New PIN</h2>
+          <p style="font-size:14px; color:#666666; margin:0 0 10px;">Enter a new 4-digit PIN</p>
+          <div class="pin-dots">
+            <div class="pin-dot filled"></div>
+            <div class="pin-dot filled"></div>
+            <div class="pin-dot filled"></div>
+            <div class="pin-dot"></div>
+          </div>
+        </div>
+        <div class="pin-pad">
+          <div>1</div><div>2</div><div>3</div>
+          <div>4</div><div>5</div><div>6</div>
+          <div>7</div><div>8</div><div>9</div>
+          <div></div><div>0</div><div>⌫</div>
+        </div>
+      </div></div>
+      <div class="screen-label">Change PIN — New PIN</div>
+      <div class="screen-sub">change-pin.tsx (step 2)</div>
+    </div>
+
+    <!-- SECURITY SETTINGS -->
+    <div class="screen-block">
+      <div class="phone"><div class="phone-screen">
+        <div class="notch"></div>
+        <div class="status-row"><span>9:41</span><span>🔋 100%</span></div>
+        <div class="app-topbar">
+          <div style="width:36px; height:36px; display:flex; align-items:center; justify-content:center;"><img src="images/backarrow.png" alt="Back" onerror="this.parentNode.textContent='‹';" style="width:20px; height:20px; object-fit:contain; display:block;"></div>
+          <div class="title">Security</div>
+          <div style="width:36px;"></div>
+        </div>
+        <div class="screen-body" style="background:#ffffff;">
+          <div class="section-title">Login & Access</div>
+          <div class="list-item"><div class="text"><div class="t1">Change Password</div></div><span class="chevron">›</span></div>
+          <div class="divider"></div>
+          <div class="list-item"><div class="text"><div class="t1">Change PIN</div></div><span class="chevron">›</span></div>
+          <div class="divider"></div>
+          <div class="list-item"><div class="text"><div class="t1">Update Face</div></div><span class="chevron">›</span></div>
+          <div class="section-title">Biometric & Verification</div>
+          <div class="list-item">
+            <div class="text"><div class="t1">Face ID Login</div><div class="t2">Use face to unlock app</div></div>
+            <div class="toggle on" style="margin-left:auto;"><div class="knob"></div></div>
+          </div>
+          <div class="divider"></div>
+          <div class="list-item">
+            <div class="text"><div class="t1">SMS Verification for Login</div><div class="t2">Extra security layer</div></div>
+            <div class="toggle" style="margin-left:auto;"><div class="knob"></div></div>
+          </div>
+          <div class="section-title">Biometric Consent</div>
+          <div class="card">
+            <div class="row-between">
+              <span style="font-size:13px; color:#666666;">Consent Status</span>
+              <span class="pill">Granted</span>
+            </div>
+            <div style="font-size:12px; color:#666666; margin-top:8px;">You consented to biometric enrollment on Jul 29, 2026 at 9:10 AM</div>
+            <div class="btn-link" style="text-align:left; margin-top:8px;">Withdraw Consent</div>
+          </div>
+          <div class="section-title">Danger Zone</div>
+          <div class="list-item"><div class="text"><div class="t1" style="color:#2727d6;">Delete Account</div></div><span class="chevron">›</span></div>
+        </div>
+      </div></div>
+      <div class="screen-label">Security Settings <span class="tag-mod">MODIFIED</span></div>
+      <div class="screen-sub">Includes biometric consent management per PRD</div>
+    </div>
+
+    <!-- UPDATE FACE: PIN VERIFY -->
+    <div class="screen-block">
+      <div class="phone"><div class="phone-screen">
+        <div class="notch"></div>
+        <div class="status-row"><span>9:41</span><span>🔋 100%</span></div>
+        <div style="flex:1; position:relative; background:#ffffff;">
+          <div style="position:absolute; bottom:0; left:0; right:0; background:#ffffff; border-radius:20px 20px 0 0; padding:28px 24px;">
+            <h3 style="margin:0 0 4px; font-size:18px; font-weight:700; text-align:center; color:#2727d6;">Confirm PIN</h3>
+            <p style="margin:0 0 20px; font-size:14px; color:#666666; text-align:center;">Enter your PIN to update your face</p>
+            <div class="pin-dots">
+              <div class="pin-dot filled"></div>
+              <div class="pin-dot filled"></div>
+              <div class="pin-dot"></div>
+              <div class="pin-dot"></div>
+            </div>
+            <div class="btn-primary" style="margin-top:12px;">Confirm</div>
+          </div>
+        </div>
+      </div></div>
+      <div class="screen-label">Update Face — PIN Verify <span class="tag-mod">MODIFIED</span></div>
+      <div class="screen-sub">PRD FR-04: PIN required for face updates</div>
+    </div>
+
+    <!-- UPDATE FACE: CAMERA -->
+    <div class="screen-block">
+      <div class="phone"><div class="phone-screen">
+        <div class="notch"></div>
+        <div class="status-row" style="color:#4e9af1;"><span>9:41</span><span>🔋 100%</span></div>
+        <div style="flex:1; background:#111111; display:flex; flex-direction:column; align-items:center; justify-content:center; position:relative;">
+          <div style="color:#4e9af1; font-size:14px; font-weight:600; margin-bottom:12px;">Update Your Face</div>
+          <div style="width:220px; height:220px; border-radius:50%; border:4px solid #2727d6; display:flex; align-items:center; justify-content:center; font-size:70px;">🙂</div>
+          <div style="color:#2727d6; font-size:13px; margin-top:14px;"><img src="images/checkicon.png" alt="✓" style="width:12px; height:12px; object-fit:contain; vertical-align:middle; display:inline-block; margin-right:6px;"> Face Detected</div>
+          <div style="position:absolute; bottom:30px; left:0; right:0; text-align:center;">
+            <div style="width:64px; height:64px; border-radius:50%; background:#ffffff; border:4px solid #2727d6; margin:0 auto;"></div>
+          </div>
+        </div>
+      </div></div>
+      <div class="screen-label">Update Face — Camera <span class="tag-mod">MODIFIED</span></div>
+      <div class="screen-sub">update-face.tsx</div>
+    </div>
+
+    <!-- UPDATE FACE: ROC RETRY ERROR -->
+    <div class="screen-block">
+      <div class="phone"><div class="phone-screen">
+        <div class="notch"></div>
+        <div class="status-row"><span>9:41</span><span>🔋 100%</span></div>
+        <div class="center-col">
+          <div class="shield-icon" style="background:#fef2f2;"><img src="images/warningicon.png" alt="⚠️" onerror="this.parentNode.textContent='⚠️';" style="width:32px; height:32px; object-fit:contain; display:block;"></div>
+          <h2 style="font-size:18px; font-weight:700; margin:0 0 6px; color:#2727d6;">Registration Failed</h2>
+          <p style="font-size:14px; color:#666666; margin:0 0 16px; max-width:270px;">We couldn't complete your face update. Please try again later.</p>
+          <div class="info-banner danger" style="max-width:280px;">
+            <span><img src="images/warningicon.png" alt="⚠️" onerror="this.parentNode.textContent='⚠️';" style="width:32px; height:32px; object-fit:contain; display:block;"></span><span>Your face has NOT been marked as updated. Please retry.</span>
+          </div>
+        </div>
+        <div style="padding:0 24px 24px;">
+          <div class="btn-primary">Retry Now</div>
+          <div class="btn-link" style="margin-top:12px;">Try Again Later</div>
+        </div>
+      </div></div>
+      <div class="screen-label">Update Face — ROC Retry Error <span class="tag-new">NEW</span></div>
+      <div class="screen-sub">PRD: ROC timeout → retry without marking complete</div>
+    </div>
+
+    <!-- UPDATE FACE: SUCCESS -->
+    <div class="screen-block">
+      <div class="phone"><div class="phone-screen">
+        <div class="notch"></div>
+        <div class="status-row"><span>9:41</span><span>🔋 100%</span></div>
+        <div class="center-col">
+          <div style="width:90px; height:90px; border-radius:50%; background:#ecfdf5; display:flex; align-items:center; justify-content:center; font-size:40px;"><img src="images/checkicon.png" alt="✅" onerror="this.parentNode.textContent='✅';" style="width:40px; height:40px; object-fit:contain; display:block;"></div>
+          <h2 style="font-size:20px; font-weight:700; margin:20px 0 8px; color:#2727d6;">Face Updated!</h2>
+          <p style="font-size:14px; color:#666666; margin:0 0 24px;">Your face template has been updated successfully</p>
+        </div>
+        <div style="padding:0 24px 24px;"><div class="btn-primary">Done</div></div>
+      </div></div>
+      <div class="screen-label">Update Face — Success</div>
+      <div class="screen-sub">update-face.tsx — success state</div>
+    </div>
+
+  </div>
+</body>
+</html>

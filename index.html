@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>TruePass — Mockup Screens</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-header">
+    <h1>TruePass — Identity Onboarding v2.0</h1>
+    <p>End-to-end pixel-perfect mockups · Aligned with TruePass PRD v2.0 · FacePe design system</p>
+  </div>
+
+  <div style="max-width:900px; margin:0 auto; padding:32px;">
+
+    <!-- Flow Diagram Link -->
+    <a href="flow-diagram.html" style="text-decoration:none; color:inherit; display:block; margin-bottom:24px;">
+      <div style="background:linear-gradient(135deg,#2727d6,#1b1b9e); border-radius:16px; padding:20px; color:#fff; box-shadow:0 4px 12px rgba(39,39,214,0.2);">
+        <div style="font-size:28px; margin-bottom:8px;">🔄</div>
+        <div style="font-size:16px; font-weight:700;">Complete Application Flow Diagram</div>
+        <div style="font-size:12px; opacity:0.9; margin-top:6px;">Visual flow of all 49 screens connected with arrows — onboarding → dashboard → documents → family → history → settings → account</div>
+      </div>
+    </a>
+
+    <!-- PRD Summary -->
+    <div style="background:#fff; border-radius:16px; padding:24px; margin-bottom:32px; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+      <h2 style="margin:0 0 12px; font-size:18px; font-weight:700; color:#000000;">PRD v2.0 Key Requirements</h2>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px 24px; font-size:13px; color:#666666;">
+        <div><img src="images/checkicon.png" alt="✅" onerror="this.parentNode.textContent='✅';" style="width:40px; height:40px; object-fit:contain; display:block;"> Mandatory face enrollment gate (no skip)</div>
+        <div><img src="images/checkicon.png" alt="✅" onerror="this.parentNode.textContent='✅';" style="width:40px; height:40px; object-fit:contain; display:block;"> Biometric consent before face capture</div>
+        <div><img src="images/checkicon.png" alt="✅" onerror="this.parentNode.textContent='✅';" style="width:40px; height:40px; object-fit:contain; display:block;"> Document types: Passport, DL, ID Card</div>
+        <div><img src="images/checkicon.png" alt="✅" onerror="this.parentNode.textContent='✅';" style="width:40px; height:40px; object-fit:contain; display:block;"> Selfie + document portrait matching</div>
+        <div><img src="images/checkicon.png" alt="✅" onerror="this.parentNode.textContent='✅';" style="width:40px; height:40px; object-fit:contain; display:block;"> Profile mismatch with 15-min TTL session</div>
+        <div><img src="images/checkicon.png" alt="✅" onerror="this.parentNode.textContent='✅';" style="width:40px; height:40px; object-fit:contain; display:block;"> Family age rules: 0-4, 5-17, 18+</div>
+        <div><img src="images/checkicon.png" alt="✅" onerror="this.parentNode.textContent='✅';" style="width:40px; height:40px; object-fit:contain; display:block;"> Guardianship consent for minors</div>
+        <div><img src="images/checkicon.png" alt="✅" onerror="this.parentNode.textContent='✅';" style="width:40px; height:40px; object-fit:contain; display:block;"> Age-18 transition notification</div>
+        <div><img src="images/checkicon.png" alt="✅" onerror="this.parentNode.textContent='✅';" style="width:40px; height:40px; object-fit:contain; display:block;"> Data deletion: PostgreSQL + S3 + ROC</div>
+        <div><img src="images/checkicon.png" alt="✅" onerror="this.parentNode.textContent='✅';" style="width:40px; height:40px; object-fit:contain; display:block;"> PIN required for face updates</div>
+        <div><img src="images/checkicon.png" alt="✅" onerror="this.parentNode.textContent='✅';" style="width:40px; height:40px; object-fit:contain; display:block;"> ROC retry on failure (no false success)</div>
+        <div><img src="images/checkicon.png" alt="✅" onerror="this.parentNode.textContent='✅';" style="width:40px; height:40px; object-fit:contain; display:block;"> Biometric consent withdrawal</div>
+      </div>
+    </div>
+
+    <!-- Category Links -->
+    <h2 style="font-size:16px; font-weight:700; color:#000000; margin-bottom:16px;">Screen Categories</h2>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+
+      <a href="01-onboarding.html" style="text-decoration:none; color:inherit;">
+        <div style="background:#fff; border-radius:16px; padding:20px; border:0.5px solid #f5f5f5; box-shadow:0 2px 6px rgba(0,0,0,0.08);">
+          <div style="font-size:28px; margin-bottom:8px;">👋</div>
+          <div style="font-size:15px; font-weight:700; color:#000000;">01 — Onboarding & Registration</div>
+          <div style="font-size:12px; color:#666666; margin-top:6px;">Welcome (3 slides) · Login · Register · OTP Phone · OTP Email · Account Details + PIN · Biometric Consent · Face Scan (mandatory) · Face Enrolled</div>
+          <div style="margin-top:10px;"><span style="font-size:11px; background:#e8f0fe; color:#2727d6; padding:3px 8px; border-radius:4px; font-weight:600;">10 screens</span></div>
+        </div>
+      </a>
+
+      <a href="02-identity-dashboard.html" style="text-decoration:none; color:inherit;">
+        <div style="background:#fff; border-radius:16px; padding:20px; border:0.5px solid #f5f5f5; box-shadow:0 2px 6px rgba(0,0,0,0.08);">
+          <div style="font-size:28px; margin-bottom:8px;"><img src="images/idcardicon.png" alt="Identity" style="width:1em; height:1em; object-fit:contain; vertical-align:middle;"></div>
+          <div style="font-size:15px; font-weight:700; color:#000000;">02 — Identity Dashboard</div>
+          <div style="font-size:12px; color:#666666; margin-top:6px;">Home tab — verification status, progress funnel, quick actions, full activity log (incomplete & fully verified states)</div>
+          <div style="margin-top:10px;"><span style="font-size:11px; background:#e8f0fe; color:#2727d6; padding:3px 8px; border-radius:4px; font-weight:600;">2 screens</span></div>
+        </div>
+      </a>
+
+      <a href="03-documents.html" style="text-decoration:none; color:inherit;">
+        <div style="background:#fff; border-radius:16px; padding:20px; border:0.5px solid #f5f5f5; box-shadow:0 2px 6px rgba(0,0,0,0.08);">
+          <div style="font-size:28px; margin-bottom:8px;">🪪</div>
+          <div style="font-size:15px; font-weight:700; color:#000000;">03 — Documents</div>
+          <div style="font-size:12px; color:#666666; margin-top:6px;">Doc list · Detail (match scores) · Add: select type → Regula scan → selfie capture → processing → success · Face gate blocked · Mismatch session (15-min TTL)</div>
+          <div style="margin-top:10px;"><span style="font-size:11px; background:#e8f0fe; color:#2727d6; padding:3px 8px; border-radius:4px; font-weight:600;">8 screens</span></div>
+        </div>
+      </a>
+
+      <a href="04-family.html" style="text-decoration:none; color:inherit;">
+        <div style="background:#fff; border-radius:16px; padding:20px; border:0.5px solid #f5f5f5; box-shadow:0 2px 6px rgba(0,0,0,0.08);">
+          <div style="font-size:28px; margin-bottom:8px;"><img src="images/familyicon2.png" alt="Family" style="width:1em; height:1em; object-fit:contain; vertical-align:middle;"></div>
+          <div style="font-size:15px; font-weight:700; color:#000000;">04 — Family</div>
+          <div style="font-size:12px; color:#666666; margin-top:6px;">Empty & populated list · Age-18 notification · Add flow: basic info + guardianship consent · Age 18+ rejected · Age 5-17 (doc + selfie + face) · Age 0-4 (doc only) · Member detail</div>
+          <div style="margin-top:10px;"><span style="font-size:11px; background:#e8f0fe; color:#2727d6; padding:3px 8px; border-radius:4px; font-weight:600;">8 screens</span></div>
+        </div>
+      </a>
+
+      <a href="05-history.html" style="text-decoration:none; color:inherit;">
+        <div style="background:#fff; border-radius:16px; padding:20px; border:0.5px solid #f5f5f5; box-shadow:0 2px 6px rgba(0,0,0,0.08);">
+          <div style="font-size:28px; margin-bottom:8px;">🕓</div>
+          <div style="font-size:15px; font-weight:700; color:#000000;">05 — History (4th Tab)</div>
+          <div style="font-size:12px; color:#666666; margin-top:6px;">My bookings — empty state · past bookings list · completed check-in detail</div>
+          <div style="margin-top:10px;"><span style="font-size:11px; background:#e8f0fe; color:#2727d6; padding:3px 8px; border-radius:4px; font-weight:600;">3 screens</span></div>
+        </div>
+      </a>
+
+      <a href="06-profile-settings.html" style="text-decoration:none; color:inherit;">
+        <div style="background:#fff; border-radius:16px; padding:20px; border:0.5px solid #f5f5f5; box-shadow:0 2px 6px rgba(0,0,0,0.08);">
+          <div style="font-size:28px; margin-bottom:8px;">⚙️</div>
+          <div style="font-size:15px; font-weight:700; color:#000000;">06 — Profile & Settings</div>
+          <div style="font-size:12px; color:#666666; margin-top:6px;">Profile · Edit Profile · Change PIN (verify + new) · Security Settings (Face ID, SMS, biometric consent) · Update Face: PIN verify → camera → ROC retry error → success</div>
+          <div style="margin-top:10px;"><span style="font-size:11px; background:#e8f0fe; color:#2727d6; padding:3px 8px; border-radius:4px; font-weight:600;">8 screens</span></div>
+        </div>
+      </a>
+
+      <a href="07-account-legal.html" style="text-decoration:none; color:inherit;">
+        <div style="background:#fff; border-radius:16px; padding:20px; border:0.5px solid #f5f5f5; box-shadow:0 2px 6px rgba(0,0,0,0.08);">
+          <div style="font-size:28px; margin-bottom:8px;">📄</div>
+          <div style="font-size:15px; font-weight:700; color:#000000;">07 — Account & Legal</div>
+          <div style="font-size:12px; color:#666666; margin-top:6px;">Delete Account: warning (PostgreSQL + S3 + ROC) → confirm (type DELETE + PIN) → processing → success · Data & Privacy · Privacy Policy · Terms of Service · Age-18 Transition</div>
+          <div style="margin-top:10px;"><span style="font-size:11px; background:#e8f0fe; color:#2727d6; padding:3px 8px; border-radius:4px; font-weight:600;">8 screens</span></div>
+        </div>
+      </a>
+
+      
+
+    </div>
+
+    <!-- Summary -->
+    <div style="margin-top:32px; padding:20px; background:#e8f0fe; border-radius:16px;">
+      <div style="font-size:14px; font-weight:700; color:#2727d6;">Total: 49 screens across 7 categories</div>
+      <div style="font-size:12px; color:#666666; margin-top:6px;">All screens use FacePe design tokens (Satoshi font, #2727d6 primary, 375×812px phone frame). Every screen is aligned with TruePass PRD v2.0 requirements.</div>
+    </div>
+
+  </div>
+</body>
+</html>

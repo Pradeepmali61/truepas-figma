@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>TruePass — Onboarding & Registration</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-header">
+    <a class="back-link" href="index.html">← Back to all categories</a>
+    <h1>👋 Onboarding & Registration</h1>
+    <p>Welcome (rebranded) → Login (returning) → Registration → OTP → Biometric Consent → Mandatory Face Gate</p>
+  </div>
+
+  <div class="gallery">
+
+    <!-- WELCOME SLIDE 1 — rebranded -->
+    <div class="screen-block">
+      <div class="phone"><div class="phone-screen">
+        <div class="notch"></div>
+        <div class="status-row"><span>9:41</span><span>🔋 100%</span></div>
+        <div style="flex:1; display:flex; flex-direction:column; position:relative;" class="welcome-bg">
+          <div style="position:absolute; top:12px; right:20px; z-index:30;">
+            <span class="welcome-skip">Skip</span>
+          </div>
+          <div style="flex:1; background:#ffffff; display:flex; align-items:center; justify-content:center;">
+            <div style="font-size:80px;"><img src="images/idcardicon.png" alt="ID Card" onerror="this.parentNode.textContent='🪪';" style="width:80px; height:80px; object-fit:contain; display:block; margin:0 auto;"></div>
+          </div>
+          <div class="welcome-card" style="margin-top:-32px; z-index:10;">
+            <h2 class="welcome-title">Your Face is<br>Your Identity.</h2>
+            <p class="welcome-desc">Enroll once with your face and government ID — securely verified, always trusted.</p>
+            <div class="welcome-dots">
+              <div class="welcome-dot active"></div>
+              <div class="welcome-dot inactive"></div>
+              <div class="welcome-dot inactive"></div>
+            </div>
+            <div class="welcome-cta">Next</div>
+          </div>
+          <div style="background:#1b1b9e; height:20px;"></div>
+        </div>
+      </div></div>
+      <div class="screen-label">Welcome — Slide 1 <span class="tag-mod">MODIFIED</span></div>
+      <div class="screen-sub">welcome.tsx — rebranded copy</div>
+    </div>
+
+    <!-- WELCOME SLIDE 2 -->
+    <div class="screen-block">
+      <div class="phone"><div class="phone-screen">
+        <div class="notch"></div>
+        <div class="status-row"><span>9:41</span><span>🔋 100%</span></div>
+        <div style="flex:1; display:flex; flex-direction:column; position:relative;" class="welcome-bg">
+          <div style="position:absolute; top:12px; right:20px; z-index:30;">
+            <span class="welcome-skip">Skip</span>
+          </div>
+          <div style="flex:1; background:#ffffff; display:flex; align-items:center; justify-content:center;">
+            <div style="font-size:80px;"><img src="images/lockicon.png" alt="Lock" onerror="this.parentNode.textContent='🔐';" style="width:80px; height:80px; object-fit:contain; display:block; margin:0 auto;"></div>
+          </div>
+          <div class="welcome-card" style="margin-top:-32px; z-index:10;">
+            <h2 class="welcome-title">Verified Once,<br>Trusted Everywhere.</h2>
+            <p class="welcome-desc">Your face and document are matched and stored securely — no repeat KYC.</p>
+            <div class="welcome-dots">
+              <div class="welcome-dot inactive"></div>
+              <div class="welcome-dot active"></div>
+              <div class="welcome-dot inactive"></div>
+            </div>
+            <div class="welcome-cta">Next</div>
+          </div>
+          <div style="background:#1b1b9e; height:20px;"></div>
+        </div>
+      </div></div>
+      <div class="screen-label">Welcome — Slide 2 <span class="tag-mod">MODIFIED</span></div>
+      <div class="screen-sub">welcome.tsx</div>
+    </div>
+
+    <!-- WELCOME SLIDE 3 -->
+    <div class="screen-block">
+      <div class="phone"><div class="phone-screen">
+        <div class="notch"></div>
+        <div class="status-row"><span>9:41</span><span>🔋 100%</span></div>
+        <div style="flex:1; display:flex; flex-direction:column; position:relative;" class="welcome-bg">
+          <div style="position:absolute; top:12px; right:20px; z-index:30;">
+            <span class="welcome-skip">Skip</span>
+          </div>
+          <div style="flex:1; background:#ffffff; display:flex; align-items:center; justify-content:center;">
+            <div style="font-size:80px;"><img src="images/familyicon2.png" alt="Family" style="width:1em; height:1em; object-fit:contain; vertical-align:middle;"></div>
+          </div>
+          <div class="welcome-card" style="margin-top:-32px; z-index:10;">
+            <h2 class="welcome-title">Protect Your<br>Whole Family.</h2>
+            <p class="welcome-desc">Add and verify identities for dependents — all managed from one account.</p>
+            <div class="welcome-dots">
+              <div class="welcome-dot inactive"></div>
+              <div class="welcome-dot inactive"></div>
+              <div class="welcome-dot active"></div>
+            </div>
+            <div class="welcome-cta">Get Started</div>
+          </div>
+          <div style="background:#1b1b9e; height:20px;"></div>
+        </div>
+      </div></div>
+      <div class="screen-label">Welcome — Slide 3 <span class="tag-mod">MODIFIED</span></div>
+      <div class="screen-sub">welcome.tsx</div>
+    </div>
+
+    <!-- LOGIN — returning user -->
+    <div class="screen-block">
+      <div class="phone"><div class="phone-screen">
+        <div class="notch"></div>
+        <div class="status-row"><span>9:41</span><span>🔋 100%</span></div>
+        <div class="screen-body" style="padding:0 24px 24px;">
+          <div style="padding-top:12px; margin-bottom:40px;"></div>
+          <div style="text-align:center; margin-bottom:40px;">
+            <div class="login-logo">TP</div>
+            <h2 class="login-title">Login to TruePass</h2>
+            <p class="login-subtitle">Enter your mobile number or email ID linked<br>to your TruePass Account.</p>
+          </div>
+          <div style="margin-bottom:24px;">
+            <div class="floating-input">
+              <span class="label">E-mail/Mobile Number</span>
+              <span class="placeholder">Tap to Enter</span>
+            </div>
+            <div class="floating-input">
+              <span class="label">Password</span>
+              <span style="font-size:16px; color:#b0b0b0;">••••••••</span>
+              <span style="margin-left:auto; font-size:18px; color:#666666;">👁</span>
+            </div>
+            <div style="text-align:right; margin-top:-8px;">
+              <span class="btn-link">Forgot password?</span>
+            </div>
+          </div>
+          <div style="flex:1;"></div>
+          <div style="margin-top:20px;">
+            <div style="text-align:center; margin-bottom:24px;">
+              <span style="font-size:14px; color:#666666;">Don't have an account? </span>
+              <span class="btn-link">Sign Up</span>
+            </div>
+            <div style="background:linear-gradient(90deg, #4e9af1, #1b1b9e); height:56px; border-radius:8px; display:flex; align-items:center; justify-content:center; color:#fff; font-size:16px; font-weight:600;">
+              Next
+            </div>
+          </div>
+        </div>
+      </div></div>
+      <div class="screen-label">Login (Returning User) <span class="tag-mod">MODIFIED</span></div>
+      <div class="screen-sub">auth/login.tsx — rebranded</div>
+    </div>
+
+    <!-- REGISTER: CONTACT -->
+    <div class="screen-block">
+      <div class="phone"><div class="phone-screen">
+        <div class="notch"></div>
+        <div class="status-row"><span>9:41</span><span>🔋 100%</span></div>
+        <div class="app-topbar">
+          <div style="font-size:32px; font-weight:300; color:#000; line-height:32px;">‹</div>
+          <div style="width:36px;"></div>
+          <div style="width:36px;"></div>
+        </div>
+        <div class="progress-track"><div class="progress-fill" style="width:12%;"></div></div>
+        <div class="screen-body" style="padding:0 24px;">
+          <div style="padding:14px 0 6px;">
+            <h2 style="margin:0 0 4px; font-size:20px; font-weight:700; color:#2727d6;">What's your number?</h2>
+            <p style="margin:0; font-size:14px; color:#666666;">We'll send you a verification code</p>
+          </div>
+          <div class="floating-input" style="margin-top:24px;">
+            <span class="label">Country Code</span>
+            <span class="value">🇺🇸 +1 — United States</span>
+            <span style="margin-left:auto; color:#666666;">▾</span>
+          </div>
+          <div class="floating-input">
+            <span class="label">Phone Number</span>
+            <span class="placeholder">(555) 123-4567</span>
+          </div>
+          <div style="flex:1;"></div>
+          <div style="padding:0 0 24px;"><div class="btn-primary">Send Code</div></div>
+        </div>
+      </div></div>
+      <div class="screen-label">Register — Contact</div>
+      <div class="screen-sub">auth/register.tsx (contact)</div>
+    </div>
+
+    <!-- OTP VERIFY PHONE -->
+    <div class="screen-block">
+      <div class="phone"><div class="phone-screen">
+        <div class="notch"></div>
+        <div class="status-row"><span>9:41</span><span>🔋 100%</span></div>
+        <div class="app-topbar">
+          <div style="width:36px; height:36px; display:flex; align-items:center; justify-content:center;"><img src="images/backarrow.png" alt="Back" onerror="this.parentNode.textContent='‹';" style="width:20px; height:20px; object-fit:contain; display:block;"></div>
+          <div class="title">Verify Phone</div>
+          <div style="width:36px;"></div>
+        </div>
+        <div class="progress-track"><div class="progress-fill" style="width:25%;"></div></div>
+        <div class="center-col">
+          <div style="font-size:40px;"><img src="images/otpcodeicon.png" alt="OTP" onerror="this.parentNode.textContent='📲';" style="width:40px; height:40px; object-fit:contain; display:block; margin:0 auto;"></div>
+          <h2 style="font-size:18px; font-weight:700; margin:16px 0 6px; color:#2727d6;">Enter verification code</h2>
+          <p style="font-size:14px; color:#666666; margin:0 0 6px;">Sent to +1 (555) 123-4567</p>
+          <div class="otp-row">
+            <div class="otp-box filled">4</div>
+            <div class="otp-box filled">2</div>
+            <div class="otp-box filled">1</div>
+            <div class="otp-box">_</div>
+            <div class="otp-box">_</div>
+            <div class="otp-box">_</div>
+          </div>
+          <div class="btn-link">Resend code in 00:28</div>
+        </div>
+        <div style="padding:0 24px 24px;"><div class="btn-primary">Verify</div></div>
+      </div></div>
+      <div class="screen-label">Register — OTP Verify Phone</div>
+      <div class="screen-sub">auth/register.tsx (verify_phone)</div>
+    </div>
+
+    <!-- OTP VERIFY EMAIL -->
+    <div class="screen-block">
+      <div class="phone"><div class="phone-screen">
+        <div class="notch"></div>
+        <div class="status-row"><span>9:41</span><span>🔋 100%</span></div>
+        <div class="app-topbar">
+          <div style="width:36px; height:36px; display:flex; align-items:center; justify-content:center;"><img src="images/backarrow.png" alt="Back" onerror="this.parentNode.textContent='‹';" style="width:20px; height:20px; object-fit:contain; display:block;"></div>
+          <div class="title">Verify Email</div>
+          <div style="width:36px;"></div>
+        </div>
+        <div class="progress-track"><div class="progress-fill" style="width:35%;"></div></div>
+        <div class="center-col">
+          <div style="font-size:40px;"><img src="images/inboxicon.png" alt="Inbox" onerror="this.parentNode.textContent='✉️';" style="width:40px; height:40px; object-fit:contain; display:block; margin:0 auto;"></div>
+          <h2 style="font-size:18px; font-weight:700; margin:16px 0 6px; color:#2727d6;">Check your inbox</h2>
+          <p style="font-size:14px; color:#666666; margin:0 0 6px;">Code sent to jane.doe@email.com</p>
+          <div class="otp-row">
+            <div class="otp-box filled">7</div>
+            <div class="otp-box filled">3</div>
+            <div class="otp-box filled">9</div>
+            <div class="otp-box filled">1</div>
+            <div class="otp-box">_</div>
+            <div class="otp-box">_</div>
+          </div>
+          <div class="btn-link">Resend code in 00:45</div>
+        </div>
+        <div style="padding:0 24px 24px;"><div class="btn-primary">Verify</div></div>
+      </div></div>
+      <div class="screen-label">Register — OTP Verify Email</div>
+      <div class="screen-sub">auth/register.tsx (verify_email)</div>
+    </div>
+
+    <!-- REGISTER: ACCOUNT DETAILS + PIN -->
+    <div class="screen-block">
+      <div class="phone"><div class="phone-screen">
+        <div class="notch"></div>
+        <div class="status-row"><span>9:41</span><span>🔋 100%</span></div>
+        <div class="app-topbar">
+          <div style="width:36px; height:36px; display:flex; align-items:center; justify-content:center;"><img src="images/backarrow.png" alt="Back" onerror="this.parentNode.textContent='‹';" style="width:20px; height:20px; object-fit:contain; display:block;"></div>
+          <div class="title">Sign Up</div>
+          <div style="width:36px;"></div>
+        </div>
+        <div class="progress-track"><div class="progress-fill" style="width:45%;"></div></div>
+        <div class="screen-body" style="padding:0 24px;">
+          <div style="padding:10px 0 4px;"><h2 style="margin:0; font-size:18px; font-weight:700; color:#2727d6;">Your details</h2></div>
+          <div class="floating-input" style="margin-top:16px;">
+            <span class="label">Full Name</span>
+            <span class="placeholder">Jane Doe</span>
+          </div>
+          <div class="floating-input">
+            <span class="label">Date of Birth</span>
+            <span class="placeholder">MM / DD / YYYY</span>
+          </div>
+          <div class="floating-input">
+            <span class="label">Set 4-digit PIN</span>
+            <span style="font-size:16px; color:#b0b0b0;">• • • •</span>
+          </div>
+          <div class="info-banner">
+            <span><img src="images/infoicon.png" alt="ℹ️" onerror="this.parentNode.textContent='ℹ️';" style="width:16px; height:16px; object-fit:contain; display:block;"></span><span>Your PIN secures your face enrollment and future updates.</span>
+          </div>
+          <div style="flex:1;"></div>
+          <div style="padding:16px 0 24px;"><div class="btn-primary">Continue</div></div>
+        </div>
+      </div></div>
+      <div class="screen-label">Register — Account Details + PIN</div>
+      <div class="screen-sub">auth/register.tsx (account_details) — PIN required per PRD FR-03</div>
+    </div>
+
+    <!-- NEW: BIOMETRIC CONSENT -->
+    <div class="screen-block">
+      <div class="phone"><div class="phone-screen">
+        <div class="notch"></div>
+        <div class="status-row"><span>9:41</span><span>🔋 100%</span></div>
+        <div class="app-topbar">
+          <div style="width:36px; height:36px; display:flex; align-items:center; justify-content:center;"><img src="images/backarrow.png" alt="Back" onerror="this.parentNode.textContent='‹';" style="width:20px; height:20px; object-fit:contain; display:block;"></div>
+          <div class="title">Biometric Consent</div>
+          <div style="width:36px;"></div>
+        </div>
+        <div class="progress-track"><div class="progress-fill" style="width:55%;"></div></div>
+        <div class="screen-body" style="padding:0 0 24px;">
+          <div style="text-align:center; padding:16px 24px 8px;">
+            <div style="font-size:44px;"><img src="images/shieldicon.png" alt="🛡️" onerror="this.parentNode.textContent='🛡️';" style="width:24px; height:24px; object-fit:contain; display:block;"></div>
+            <h2 style="margin:12px 0 6px; font-size:18px; font-weight:700; color:#2727d6;">We need your consent</h2>
+          </div>
+          <div style="padding:0 24px; font-size:13px; color:#666666; line-height:1.6;">
+            TruePass will capture and store an encrypted facial template to verify your identity. This biometric data is:
+          </div>
+          <div style="padding:12px 24px;">
+            <div class="list-item" style="padding:6px 0;">
+              <div class="icon-wrap" style="width:28px; height:28px; font-size:13px; background:transparent;"><img src="images/lockicon.png" alt="🔒" onerror="this.parentNode.textContent='🔒';" style="width:16px; height:16px; object-fit:contain; display:block;"></div>
+              <div class="text"><div class="t1" style="font-size:13px;">Encrypted and stored securely (ROC)</div></div>
+            </div>
+            <div class="list-item" style="padding:6px 0;">
+              <div class="icon-wrap" style="width:28px; height:28px; font-size:13px; background:transparent;">🚫</div>
+              <div class="text"><div class="t1" style="font-size:13px;">Never shared with third parties</div></div>
+            </div>
+            <div class="list-item" style="padding:6px 0;">
+              <div class="icon-wrap" style="width:28px; height:28px; background:transparent;"><img src="images/deleteicon.png" alt="Delete" onerror="this.parentNode.textContent='🗑️';" style="width:22px; height:22px; object-fit:contain; display:block; margin:0 auto;"></div>
+              <div class="text"><div class="t1" style="font-size:13px;">Deleted permanently on account deletion</div></div>
+            </div>
+          </div>
+          <div class="checkbox-row" style="margin-top:8px;">
+            <div class="checkbox-box checked">✓</div>
+            <div class="txt">I consent to the enrollment and processing of my biometric (facial) data for identity verification purposes.</div>
+          </div>
+          <div style="flex:1;"></div>
+          <div style="padding:16px 24px 0;">
+            <div class="btn-primary">Agree & Continue</div>
+            <div class="btn-link" style="margin-top:14px;">Decline (Face enrollment is required to use TruePass)</div>
+          </div>
+        </div>
+      </div></div>
+      <div class="screen-label">Biometric Consent <span class="tag-new">NEW</span></div>
+      <div class="screen-sub">New screen — PRD: explicit consent before face capture</div>
+    </div>
+
+    <!-- FACE SCAN INTRO — no skip -->
+    <div class="screen-block">
+      <div class="phone"><div class="phone-screen">
+        <div class="notch"></div>
+        <div class="status-row"><span>9:41</span><span>🔋 100%</span></div>
+        <div class="app-topbar">
+          <div style="width:36px; height:36px; display:flex; align-items:center; justify-content:center;"><img src="images/backarrow.png" alt="Back" onerror="this.parentNode.textContent='‹';" style="width:20px; height:20px; object-fit:contain; display:block;"></div>
+          <div class="title">Sign Up</div>
+          <div style="width:36px;"></div>
+        </div>
+        <div class="progress-track"><div class="progress-fill" style="width:75%;"></div></div>
+        <div class="center-col">
+          <div class="circle-scan">🙂</div>
+          <h2 style="font-size:18px; font-weight:700; margin:6px 0 4px; color:#2727d6;">Let's scan your face</h2>
+          <p style="font-size:14px; color:#666666; margin:0 0 6px; max-width:260px;">Good lighting · No glasses/mask · Eye-level camera</p>
+          <div class="info-banner warn" style="max-width:280px;"><img src="images/warningicon.png" alt="⚠️" onerror="this.parentNode.textContent='⚠️';" style="width:32px; height:32px; object-fit:contain; display:block;"> This step is mandatory and cannot be skipped</div>
+        </div>
+        <div style="padding:0 24px 24px;"><div class="btn-primary">Start Face Scan</div></div>
+      </div></div>
+      <div class="screen-label">Face Scan — Mandatory Gate <span class="tag-mod">MODIFIED</span></div>
+      <div class="screen-sub">register.tsx (face_scan) — Skip removed per PRD v2.0</div>
+    </div>
+
+    <!-- FACE ENROLLED SUCCESS -->
+    <div class="screen-block">
+      <div class="phone"><div class="phone-screen">
+        <div class="notch"></div>
+        <div class="status-row"><span>9:41</span><span>🔋 100%</span></div>
+        <div class="center-col">
+          <div style="width:90px; height:90px; border-radius:50%; background:#e8f0fe; display:flex; align-items:center; justify-content:center; font-size:40px;"><img src="images/checkicon.png" alt="✅" onerror="this.parentNode.textContent='✅';" style="width:40px; height:40px; object-fit:contain; display:block;"></div>
+          <h2 style="font-size:20px; font-weight:700; margin:20px 0 4px; color:#2727d6;">Face Enrolled!</h2>
+          <p style="font-size:14px; color:#666666; margin:0 0 10px;">Now let's verify your identity document</p>
+          <span class="pill active">Step 1 of 2 Complete</span>
+        </div>
+        <div style="padding:0 24px 24px;"><div class="btn-primary">Continue to Document Verification</div></div>
+      </div></div>
+      <div class="screen-label">Face Enrolled — Success <span class="tag-mod">MODIFIED</span></div>
+      <div class="screen-sub">No "skip"; leads straight to document flow per PRD v2.0</div>
+    </div>
+
+  </div>
+</body>
+</html>

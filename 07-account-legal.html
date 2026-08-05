@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>TruePass — Account & Legal</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-header">
+    <a class="back-link" href="index.html">← Back to all categories</a>
+    <h1>📄 Account & Legal</h1>
+    <p>Delete Account (PostgreSQL + S3 + ROC), Data & Privacy, Privacy Policy, Terms of Service, Age-18 Transition</p>
+  </div>
+
+  <div class="gallery">
+
+    <!-- DELETE ACCOUNT: WARNING -->
+    <div class="screen-block">
+      <div class="phone"><div class="phone-screen">
+        <div class="notch"></div>
+        <div class="status-row"><span>9:41</span><span>🔋 100%</span></div>
+        <div class="app-topbar">
+          <div style="width:36px; height:36px; display:flex; align-items:center; justify-content:center;"><img src="images/backarrow.png" alt="Back" onerror="this.parentNode.textContent='‹';" style="width:20px; height:20px; object-fit:contain; display:block;"></div>
+          <div class="title">Delete Account</div>
+          <div style="width:36px;"></div>
+        </div>
+        <div class="screen-body" style="background:#ffffff; padding:0 24px;">
+          <div style="text-align:center; padding:24px 0;">
+            <div style="font-size:40px;"><img src="images/warningicon.png" alt="⚠️" onerror="this.parentNode.textContent='⚠️';" style="width:32px; height:32px; object-fit:contain; display:block;"></div>
+            <h2 style="font-size:18px; font-weight:700; margin:12px 0 6px; color:#2727d6;">This action is permanent</h2>
+            <p style="font-size:14px; color:#666666; margin:0;">Deleting your account will remove all your data across all systems.</p>
+          </div>
+          <!-- PRD: PostgreSQL + S3 + ROC deletion -->
+          <div class="delete-checklist">
+            <div style="font-size:12px; font-weight:600; color:#666666; text-transform:uppercase; letter-spacing:0.5px; margin-bottom:8px;">What will be deleted</div>
+            <div class="item">
+              <div class="icon">🗄️</div>
+              <div class="label">Account & profile data</div>
+              <div class="source">PostgreSQL</div>
+            </div>
+            <div class="item">
+              <div class="icon">🖼️</div>
+              <div class="label">Document images, selfies, portraits</div>
+              <div class="source">S3</div>
+            </div>
+            <div class="item">
+              <div class="icon">🙂</div>
+              <div class="label">Face template & biometric data</div>
+              <div class="source">ROC Gallery</div>
+            </div>
+            <div class="item">
+              <div class="icon">👨‍👩‍👧</div>
+              <div class="label">Family member records</div>
+              <div class="source">PostgreSQL</div>
+            </div>
+          </div>
+          <div class="info-banner danger">
+            <span><img src="images/warningicon.png" alt="⚠️" onerror="this.parentNode.textContent='⚠️';" style="width:32px; height:32px; object-fit:contain; display:block;"></span><span>Deletion is verified across PostgreSQL, S3, and ROC. This cannot be undone.</span>
+          </div>
+          <div style="flex:1;"></div>
+          <div style="padding:16px 0 24px;">
+            <div class="btn-primary btn-danger">Continue to Delete</div>
+            <div class="btn-outline" style="margin-top:10px;">Cancel</div>
+          </div>
+        </div>
+      </div></div>
+      <div class="screen-label">Delete Account — Warning <span class="tag-mod">MODIFIED</span></div>
+      <div class="screen-sub">PRD: deletion spans PostgreSQL + S3 + ROC</div>
+    </div>
+
+    <!-- DELETE ACCOUNT: CONFIRM -->
+    <div class="screen-block">
+      <div class="phone"><div class="phone-screen">
+        <div class="notch"></div>
+        <div class="status-row"><span>9:41</span><span>🔋 100%</span></div>
+        <div class="app-topbar">
+          <div style="width:36px; height:36px; display:flex; align-items:center; justify-content:center;"><img src="images/backarrow.png" alt="Back" onerror="this.parentNode.textContent='‹';" style="width:20px; height:20px; object-fit:contain; display:block;"></div>
+          <div class="title">Confirm Deletion</div>
+          <div style="width:36px;"></div>
+        </div>
+        <div class="screen-body" style="background:#ffffff; padding:0 24px;">
+          <div style="padding:24px 0;">
+            <p style="font-size:14px; color:#666666; line-height:1.5;">Type <b style="color:#2727d6;">DELETE</b> to confirm you want to permanently delete your account and all associated data.</p>
+          </div>
+          <div class="floating-input">
+            <span class="label">Type DELETE</span>
+            <span class="value" style="color:#2727d6; font-weight:700;">DELETE</span>
+          </div>
+          <div class="floating-input" style="margin-top:24px;">
+            <span class="label">Enter PIN</span>
+            <span style="font-size:16px; color:#b0b0b0;">• • • •</span>
+          </div>
+          <div style="flex:1;"></div>
+          <div style="padding:16px 0 24px;">
+            <div class="btn-primary btn-danger">Delete My Account</div>
+          </div>
+        </div>
+      </div></div>
+      <div class="screen-label">Delete Account — Confirm</div>
+      <div class="screen-sub">Type DELETE + PIN verification</div>
+    </div>
+
+    <!-- DELETE ACCOUNT: PROCESSING -->
+    <div class="screen-block">
+      <div class="phone"><div class="phone-screen">
+        <div class="notch"></div>
+        <div class="status-row"><span>9:41</span><span>🔋 100%</span></div>
+        <div class="center-col">
+          <div style="width:80px; height:80px; border-radius:50%; border:5px solid #e8f0fe; border-top-color:#2727d6;"></div>
+          <h2 style="font-size:16px; font-weight:700; margin:20px 0 4px; color:#2727d6;">Deleting your data…</h2>
+          <div style="margin-top:16px; font-size:13px; color:#666666; text-align:left;">
+            <div style="margin:6px 0;"><img src="images/checkicon.png" alt="✓" style="width:12px; height:12px; object-fit:contain; vertical-align:middle; display:inline-block; margin-right:6px;"> Account data removed (PostgreSQL)</div>
+            <div style="margin:6px 0;"><img src="images/checkicon.png" alt="✓" style="width:12px; height:12px; object-fit:contain; vertical-align:middle; display:inline-block; margin-right:6px;"> Images deleted (S3)</div>
+            <div style="margin:6px 0;"><img src="images/hourglassicon.png" alt="⏳" onerror="this.style.display='none';" style="width:14px; height:14px; object-fit:contain; vertical-align:middle; display:inline-block; margin-right:6px;">Removing face template (ROC)…</div>
+          </div>
+        </div>
+      </div></div>
+      <div class="screen-label">Delete Account — Processing <span class="tag-new">NEW</span></div>
+      <div class="screen-sub">PRD: verification across all 3 systems</div>
+    </div>
+
+    <!-- DELETE ACCOUNT: SUCCESS -->
+    <div class="screen-block">
+      <div class="phone"><div class="phone-screen">
+        <div class="notch"></div>
+        <div class="status-row"><span>9:41</span><span>🔋 100%</span></div>
+        <div class="center-col">
+          <div style="width:90px; height:90px; border-radius:50%; background:#ecfdf5; display:flex; align-items:center; justify-content:center; font-size:40px;"><img src="images/checkicon.png" alt="✅" onerror="this.parentNode.textContent='✅';" style="width:40px; height:40px; object-fit:contain; display:block;"></div>
+          <h2 style="font-size:20px; font-weight:700; margin:20px 0 8px; color:#2727d6;">Account Deleted</h2>
+          <p style="font-size:14px; color:#666666; margin:0 0 16px;">All your data has been permanently removed</p>
+          <div class="card" style="text-align:left; width:100%; max-width:280px;">
+            <div style="font-size:12px; color:#666666; margin-bottom:8px;">Deletion Verified</div>
+            <div class="row-between" style="margin-bottom:6px;">
+              <span style="font-size:12px;">🗄️ PostgreSQL</span>
+              <span style="font-size:12px; color:#2727d6; font-weight:700;"><img src="images/checkicon.png" alt="✓" style="width:12px; height:12px; object-fit:contain; vertical-align:middle; display:inline-block; margin-right:6px;"> Deleted</span>
+            </div>
+            <div class="row-between" style="margin-bottom:6px;">
+              <span style="font-size:12px;">🖼️ S3 Images</span>
+              <span style="font-size:12px; color:#2727d6; font-weight:700;"><img src="images/checkicon.png" alt="✓" style="width:12px; height:12px; object-fit:contain; vertical-align:middle; display:inline-block; margin-right:6px;"> Deleted</span>
+            </div>
+            <div class="row-between">
+              <span style="font-size:12px;">🙂 ROC Gallery</span>
+              <span style="font-size:12px; color:#2727d6; font-weight:700;"><img src="images/checkicon.png" alt="✓" style="width:12px; height:12px; object-fit:contain; vertical-align:middle; display:inline-block; margin-right:6px;"> Deleted</span>
+            </div>
+          </div>
+        </div>
+        <div style="padding:0 24px 24px;"><div class="btn-primary">Close App</div></div>
+      </div></div>
+      <div class="screen-label">Delete Account — Success <span class="tag-new">NEW</span></div>
+      <div class="screen-sub">PRD: all 3 systems verified</div>
+    </div>
+
+    <!-- DATA & PRIVACY -->
+    <div class="screen-block">
+      <div class="phone"><div class="phone-screen">
+        <div class="notch"></div>
+        <div class="status-row"><span>9:41</span><span>🔋 100%</span></div>
+        <div class="app-topbar">
+          <div style="width:36px; height:36px; display:flex; align-items:center; justify-content:center;"><img src="images/backarrow.png" alt="Back" onerror="this.parentNode.textContent='‹';" style="width:20px; height:20px; object-fit:contain; display:block;"></div>
+          <div class="title">Data & Privacy</div>
+          <div style="width:36px;"></div>
+        </div>
+        <div class="screen-body" style="background:#ffffff;">
+          <div class="section-title">Your Data</div>
+          <div class="list-item"><div class="icon-wrap">📦</div><div class="text"><div class="t1">Download My Data</div><div class="t2">Export all your data as ZIP</div></div><span class="chevron">›</span></div>
+          <div class="divider"></div>
+          <div class="list-item"><div class="icon-wrap">🗑️</div><div class="text"><div class="t1">Delete Account</div><div class="t2">Permanently remove all data</div></div><span class="chevron">›</span></div>
+          <div class="section-title">Biometric Data</div>
+          <div class="card">
+            <div class="row-between" style="margin-bottom:8px;">
+              <span style="font-size:13px; color:#666666;">Face Template</span>
+              <span class="pill">Enrolled</span>
+            </div>
+            <div style="font-size:12px; color:#666666; line-height:1.5;">Your encrypted face template is stored in ROC (Rank One Computing) gallery. It will be deleted permanently when you delete your account.</div>
+          </div>
+          <div class="section-title">Retention Policy</div>
+          <div class="card">
+            <div class="list-item" style="padding:6px 0;"><div class="text"><div class="t2">Account data</div><div class="t1" style="font-size:13px;">Retained while account is active</div></div></div>
+            <div class="divider" style="margin:4px 0;"></div>
+            <div class="list-item" style="padding:6px 0;"><div class="text"><div class="t2">Document images</div><div class="t1" style="font-size:13px;">Stored in S3, deleted with account</div></div></div>
+            <div class="divider" style="margin:4px 0;"></div>
+            <div class="list-item" style="padding:6px 0;"><div class="text"><div class="t2">Face template</div><div class="t1" style="font-size:13px;">ROC gallery, deleted with account</div></div></div>
+          </div>
+          <div class="section-title">Consent</div>
+          <div class="list-item"><div class="icon-wrap"><img src="images/shieldicon.png" alt="🛡️" onerror="this.parentNode.textContent='🛡️';" style="width:24px; height:24px; object-fit:contain; display:block;"></div><div class="text"><div class="t1">Biometric Consent</div><div class="t2">Granted · Jul 29, 2026</div></div><span class="chevron">›</span></div>
+        </div>
+      </div></div>
+      <div class="screen-label">Data & Privacy <span class="tag-new">NEW</span></div>
+      <div class="screen-sub">PRD: retention info, deletion rights, consent management</div>
+    </div>
+
+    <!-- PRIVACY POLICY -->
+    <div class="screen-block">
+      <div class="phone"><div class="phone-screen">
+        <div class="notch"></div>
+        <div class="status-row"><span>9:41</span><span>🔋 100%</span></div>
+        <div class="app-topbar">
+          <div style="width:36px; height:36px; display:flex; align-items:center; justify-content:center;"><img src="images/backarrow.png" alt="Back" onerror="this.parentNode.textContent='‹';" style="width:20px; height:20px; object-fit:contain; display:block;"></div>
+          <div class="title">Privacy Policy</div>
+          <div style="width:36px;"></div>
+        </div>
+        <div class="screen-body" style="background:#ffffff;">
+          <div class="legal-content">
+            <div class="updated">Last updated: July 2026</div>
+            <h3>1. Information We Collect</h3>
+            <p>We collect biometric data (facial templates), government ID information (Passport, Driver's License, Identity Card), and account metadata to provide secure identity verification services.</p>
+            <h3>2. Biometric Data Handling</h3>
+            <p>Your facial template is encrypted and stored in ROC (Rank One Computing) gallery. It is never shared with third parties and is used solely for identity matching during verification.</p>
+            <h3>3. Minor/Guardianship Consent</h3>
+            <p>For family members under 18, a parent or legal guardian must provide explicit consent before biometric enrollment. Children aged 0-4 require document upload only — no face enrollment. Ages 5-17 require document, selfie, and face enrollment.</p>
+            <h3>4. Data Retention</h3>
+            <p>All data — PostgreSQL records, S3 images, and ROC face templates — is retained while your account is active and permanently deleted upon account deletion. Deletion is verified across all three systems.</p>
+            <h3>5. Your Rights</h3>
+            <p>You have the right to download your data, withdraw biometric consent, and delete your account at any time. Account deletion removes all data across PostgreSQL, S3, and ROC.</p>
+          </div>
+        </div>
+      </div></div>
+      <div class="screen-label">Privacy Policy <span class="tag-mod">MODIFIED</span></div>
+      <div class="screen-sub">PRD: biometric data, minors/guardianship, retention</div>
+    </div>
+
+    <!-- TERMS OF SERVICE -->
+    <div class="screen-block">
+      <div class="phone"><div class="phone-screen">
+        <div class="notch"></div>
+        <div class="status-row"><span>9:41</span><span>🔋 100%</span></div>
+        <div class="app-topbar">
+          <div style="width:36px; height:36px; display:flex; align-items:center; justify-content:center;"><img src="images/backarrow.png" alt="Back" onerror="this.parentNode.textContent='‹';" style="width:20px; height:20px; object-fit:contain; display:block;"></div>
+          <div class="title">Terms of Service</div>
+          <div style="width:36px;"></div>
+        </div>
+        <div class="screen-body" style="background:#ffffff;">
+          <div class="legal-content">
+            <div class="updated">Effective: July 2026</div>
+            <h3>1. Acceptance of Terms</h3>
+            <p>By using TruePass, you agree to these Terms of Service and our Privacy Policy. TruePass is an identity verification platform that uses biometric data and government documents to verify your identity.</p>
+            <h3>2. Mandatory Face Enrollment</h3>
+            <p>Face enrollment is a mandatory step in the registration process. You cannot proceed to document verification or use TruePass services without completing face enrollment.</p>
+            <h3>3. Account Responsibilities</h3>
+            <p>You are responsible for maintaining the confidentiality of your PIN and account credentials. Face updates require PIN verification.</p>
+            <h3>4. Family Member Onboarding</h3>
+            <p>You may add family members under 18 as dependents. Adults 18 and older must create their own independent TruePass account. Guardianship consent is required for all minor enrollments.</p>
+            <h3>5. Prohibited Uses</h3>
+            <p>You may not use TruePass for fraudulent identity verification, unauthorized access, or sharing of biometric data with unauthorized parties.</p>
+          </div>
+        </div>
+      </div></div>
+      <div class="screen-label">Terms of Service <span class="tag-mod">MODIFIED</span></div>
+      <div class="screen-sub">PRD: mandatory face enrollment, family rules</div>
+    </div>
+
+    <!-- AGE-18 TRANSITION NOTIFICATION -->
+    <div class="screen-block">
+      <div class="phone"><div class="phone-screen">
+        <div class="notch"></div>
+        <div class="status-row"><span>9:41</span><span>🔋 100%</span></div>
+        <div class="app-topbar">
+          <div style="width:36px; height:36px; display:flex; align-items:center; justify-content:center;"><img src="images/backarrow.png" alt="Back" onerror="this.parentNode.textContent='‹';" style="width:20px; height:20px; object-fit:contain; display:block;"></div>
+          <div class="title">Notification</div>
+          <div style="width:36px;"></div>
+        </div>
+        <div class="screen-body" style="background:#ffffff; padding:0 24px;">
+          <div style="text-align:center; padding:24px 0 16px;">
+            <div style="font-size:44px;">🎂</div>
+          </div>
+          <div class="notification-card" style="margin:0; flex-direction:column;">
+            <div style="display:flex; gap:12px; align-items:flex-start;">
+              <div class="icon">🎂</div>
+              <div>
+                <div class="title">Max Kim is now 18</div>
+                <div class="desc">Your family member Max Kim has turned 18. They need to create their own independent TruePass account to manage their identity verification.</div>
+              </div>
+            </div>
+          </div>
+          <div class="info-banner warn" style="margin-top:16px;">
+            <span><img src="images/infoicon.png" alt="ℹ️" onerror="this.parentNode.textContent='ℹ️';" style="width:16px; height:16px; object-fit:contain; display:block;"></span><span>Max's data will be retained for 30 days after removal. They must register independently to continue using TruePass.</span>
+          </div>
+          <div style="flex:1;"></div>
+          <div style="padding:16px 0 24px;">
+            <div class="btn-primary">Remove from Family</div>
+            <div class="btn-outline" style="margin-top:10px;">Remind in 7 Days</div>
+          </div>
+        </div>
+      </div></div>
+      <div class="screen-label">Age-18 Transition Notification <span class="tag-new">NEW</span></div>
+      <div class="screen-sub">PRD: dependent turns 18 → must create own account</div>
+    </div>
+
+  </div>
+</body>
+</html>
