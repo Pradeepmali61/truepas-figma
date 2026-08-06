@@ -172,7 +172,7 @@ body {
 
 /* Buttons — height 46, radius 24 */
 .btn-primary {
-  background: linear-gradient(90deg, #4e9af1, #1b1b9e);
+  background: #2727d6;
   color: #fff;
   border: none;
   border-radius: 12px;
