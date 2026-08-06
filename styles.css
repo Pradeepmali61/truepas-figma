@@ -436,7 +436,7 @@ body {
   color: #fff;
   font-size: 13px;
 }
-.checkbox-row .txt { font-size: 13px; color: #666666; line-height: 1.5; }
+.checkbox-row .txt { font-size: 13px; color: #666666; line-height: 1.5; text-align: left; }
 
 /* Welcome screen specific */
 .welcome-bg { background: linear-gradient(180deg, #FFFFFF, #e8f0fe); }
