@@ -1,8 +1,8 @@
 /* ============================================
-   TruePass — Pixel-Perfect Mockup Styles
+   Truepas — Pixel-Perfect Mockup Styles
    Reuses FacePe's exact design system tokens
    (src/theme/*, src/constants/NewDesignSystem.ts)
-   Rebranded for TruePass Identity Onboarding v2.0
+   Rebranded for Truepas Identity Onboarding v2.0
    ============================================ */
 
 /* ---------- Font: Satoshi (primary), Inter (secondary) ---------- */
@@ -277,7 +277,7 @@ body {
 
 .divider { height: 1px; background: #f5f5f5; margin: 6px 20px; }
 
-/* Bottom nav — TruePass 4 tabs: Identity / Documents / Family / History */
+/* Bottom nav — Truepas 4 tabs: Identity / Documents / Family / History */
 .bottom-nav {
   display: flex;
   border-top: 1px solid #f5f5f5;
@@ -485,7 +485,7 @@ body {
 .app-header .user-info .greeting { font-size: 12px; color: #666666; }
 .app-header .user-info .name { font-size: 16px; font-weight: 700; color: #000000; }
 
-/* Identity status hero card — TruePass Home replacement for wallet-card */
+/* Identity status hero card — Truepas Home replacement for wallet-card */
 .identity-card {
   background: linear-gradient(135deg, #1b1b9e, #1b1b9e, #1b1b9e);
   border-radius: 16px;
@@ -540,7 +540,7 @@ body {
 }
 .funnel-line.done { background: #2727d6; }
 
-/* Quick action cards row — TruePass */
+/* Quick action cards row — Truepas */
 .quick-action {
   background: #fff9e6;
   border-radius: 16px;
@@ -958,7 +958,7 @@ body {
   margin: 20px auto;
 }
 
-/* History / Check-in card — TruePass 4th tab (OYO-style list row) */
+/* History / Check-in card — Truepas 4th tab (OYO-style list row) */
 .history-card {
   background: #fff;
   border-radius: 16px;
